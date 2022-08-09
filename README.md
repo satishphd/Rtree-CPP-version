@@ -2,6 +2,9 @@
 
 Taken from: http://superliminal.com/sources/sources.htm
 
+I wanted Guttman's Rtree code from the link above to be used from a C++ program. There was linking problem because of function names in the C code being mangled by C++. So, I added extern "C" pragmas around the header files in include.
+Moreover, I add some code in test.cpp which uses a hashmap (unordered_map) so that query results can be stored for later use.
+
 ## Building
 
 ```
