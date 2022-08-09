@@ -14,7 +14,8 @@ $ make
 ## Using
 
 ```
-$ gcc example/test.c -Iinclude -lrtree -o test
+$ g++ -std=c++11 -o prog test.cpp libtree.a -lm
+Execute by running ./prog
 ```
 
 ```
