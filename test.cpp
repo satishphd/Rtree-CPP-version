@@ -29,10 +29,10 @@ unordered_map<int, vector<int>* > hashMap;
 
 int MySearchCallback(int id, void* arg) 
 {
-	// Note: -1 to make up for the +1 when data was inserted
-	int *queryId = (int*)arg;
-	int key = *queryId;
-	int value = id-1;
+    // Note: -1 to make up for the +1 when data was inserted
+    int *queryId = (int*)arg;
+    int key = *queryId;
+    int value = id-1;
 	
     printf("Hit base layer input rect %d with query rectangle = %d \n", value, key );
 
@@ -50,7 +50,7 @@ int MySearchCallback(int id, void* arg)
        existingArr->push_back( value );
     }
 
-	return 1; // keep going
+    return 1; // keep going
 }
 
 
