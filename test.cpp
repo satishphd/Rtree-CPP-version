@@ -93,30 +93,7 @@ int main()
         nhits = RTreeSearch(root, &search_rect, MySearchCallback, &queryId);
 	printf("Search resulted in %d hits\n", nhits);
 
-    displayMap();
+        displayMap();
       
 	return 0;
 }
-
-/*
-
-// If key not found in map iterator to end is returned
-    if (umap.find(key) == umap.end())
-        cout << key << " not found\n\n";
-  
-    // If key found then iterator to that key is returned
-    else
-        cout << "Found " << key << "\n\n";
-        
-//   Iterating over all value of umap
-    
-    unordered_map<string, double>:: iterator itr;
-    cout << "\nAll Elements : \n";
-    for (itr = umap.begin(); itr != umap.end(); itr++)
-    {
-        // itr works as a pointer to pair<string, double>
-        // type itr->first stores the key part  and
-        // itr->second stores the value part
-        cout << itr->first << "  " << itr->second << endl;
-     }
-*/
